@@ -1,4 +1,4 @@
-import java.util.*;
+
 import java.util.HashMap;
 
 public class ATM {
@@ -14,13 +14,13 @@ public class ATM {
 	{
 		if (value > 0)
 		{
-			if (maps.containsKey(bankID))
+			if (maps.containsKey(this.bankID))
 			{
-				maps.put(bankID, maps.get (bankID) + value);
+				maps.put(this.bankID, maps.get (this.bankID) + value);
 			}
 			else
 			{
-				maps.put(bankID, value);
+				maps.put(this.bankID, value);
 			}
 		}
 	}
