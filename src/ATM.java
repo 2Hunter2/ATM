@@ -18,8 +18,11 @@ public class ATM {
 		}
 	}
 	public void withdraw(String bankID,Double value) throws Exception{
-		if(value>0){
+		if(value>=0){
 			if(maps.containsKey(bankID)){
+				if(value>maps.get(bankID)) {
+					throw new Exception("You do not have that amount of money!");
+				}
 				maps.put(bankID, maps.get(bankID)-value);
 			}
 			else{
