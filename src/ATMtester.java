@@ -13,5 +13,6 @@ public class ATMtester{
 		System.out.println(atm.toString());
 		atm.checkBalance("YoMama");
 		atm.checkBalance("MrTheiss");
+		
 	}
 }
