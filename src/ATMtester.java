@@ -11,7 +11,7 @@ public class ATMtester{
 		atm.checkBalance("Bezos");
 		atm.checkBalance("Winfrey");
 		System.out.println(atm.toString());
-		atm.checkBalance("YoMama");
-		atm.checkBalance("MrTheiss");
+		//atm.checkBalance("YoMama");
+		//atm.checkBalance("MrTheiss");
 	}
 }
